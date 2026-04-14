@@ -1,5 +1,5 @@
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Sparkles, Code2, Palette } from "lucide-react"
+import { ArrowRight, Sparkles, Camera, Aperture } from "lucide-react"
 import { useEffect, useState } from "react"
 
 export function HeroSection() {
@@ -33,7 +33,6 @@ export function HeroSection() {
             animationDelay: "1s",
           }}
         />
-        {/* Subtle mouse-following gradient */}
         <div
           className="absolute w-[300px] h-[300px] rounded-full bg-muted/20 blur-3xl transition-all duration-1000 ease-out"
           style={{
@@ -44,7 +43,7 @@ export function HeroSection() {
       </div>
 
       <div className="absolute inset-0 pointer-events-none">
-        <Code2
+        <Camera
           className="absolute text-muted-foreground/30 animate-float"
           style={{
             top: "15%",
@@ -53,7 +52,7 @@ export function HeroSection() {
           }}
           size={40}
         />
-        <Palette
+        <Aperture
           className="absolute text-muted-foreground/30 animate-float"
           style={{
             top: "25%",
@@ -76,13 +75,13 @@ export function HeroSection() {
       <div className="container mx-auto text-center max-w-5xl relative z-10">
         <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-primary/10 border border-primary/20 mb-6 animate-fade-in-up">
           <Sparkles className="w-4 h-4 text-primary" />
-          <span className="text-sm font-medium text-primary">Профессиональный веб-дизайн и разработка</span>
+          <span className="text-sm font-medium text-primary">Профессиональная фотостудия в аренду</span>
         </div>
 
         <h1 className="text-5xl sm:text-6xl md:text-7xl lg:text-8xl font-bold tracking-tight mb-6 animate-fade-in-up text-balance">
-          Сайты, которые{" "}
+          Снимайте то, что{" "}
           <span className="text-primary relative inline-block">
-            впечатляют
+            вдохновляет
             <svg
               className="absolute -bottom-2 left-0 w-full"
               height="12"
@@ -102,7 +101,7 @@ export function HeroSection() {
         </h1>
 
         <p className="text-xl sm:text-2xl text-muted-foreground mb-10 max-w-3xl mx-auto animate-fade-in-up animate-delay-100 leading-relaxed">
-          От концепции до запуска. Мы создаем современные, быстрые и результативные сайты, которые выводят ваш бизнес на новый уровень.
+          Современная фотостудия с профессиональным оборудованием. Аренда по часам и услуги опытного фотографа для портретов, товаров и бизнеса.
         </p>
 
         <div className="flex flex-col sm:flex-row gap-4 justify-center items-center animate-fade-in-up animate-delay-200 mb-12">
@@ -112,7 +111,7 @@ export function HeroSection() {
             asChild
           >
             <a href="#contact">
-              Начать проект
+              Забронировать студию
               <ArrowRight className="ml-2 h-5 w-5 group-hover:translate-x-1 transition-transform" />
             </a>
           </Button>
@@ -129,15 +128,15 @@ export function HeroSection() {
         <div className="flex flex-wrap justify-center items-center gap-8 text-sm text-muted-foreground animate-fade-in-up animate-delay-300">
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" />
-            <span>50+ проектов</span>
+            <span>200+ фотосессий</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" style={{ animationDelay: "0.5s" }} />
-            <span>45+ довольных клиентов</span>
+            <span>150+ довольных клиентов</span>
           </div>
           <div className="flex items-center gap-2">
             <div className="w-2 h-2 rounded-full bg-primary animate-pulse" style={{ animationDelay: "1s" }} />
-            <span>3+ года опыта</span>
+            <span>5+ лет опыта</span>
           </div>
         </div>
       </div>

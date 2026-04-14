@@ -4,39 +4,41 @@ import { QuoteFormDialog } from "@/components/QuoteFormDialog"
 
 const pricingTiers = [
   {
-    name: "Базовый",
-    price: "99 900",
+    name: "Аренда студии",
+    price: "1 500",
+    period: "/ час",
     features: [
-      "До 5 страниц",
-      "Адаптивный дизайн",
-      "Базовая SEO-оптимизация",
-      "Форма обратной связи",
-      "1 месяц поддержки",
+      "Студия до 4 человек",
+      "Профессиональный свет",
+      "Реквизит и фоны в наличии",
+      "Гримёрная комната",
+      "Минимум 2 часа",
     ],
     highlighted: false,
   },
   {
-    name: "Про",
-    price: "249 900",
+    name: "Фотосессия",
+    price: "6 000",
+    period: "/ 2 часа",
     features: [
-      "До 15 страниц",
-      "Премиум-дизайн",
-      "Расширенная SEO-оптимизация",
-      "Интеграция CMS",
-      "Функционал e-commerce",
-      "3 месяца поддержки",
+      "Опытный фотограф",
+      "Студия включена",
+      "До 3 образов / локаций",
+      "30 обработанных фото",
+      "Сдача в течение 5 дней",
     ],
     highlighted: true,
   },
   {
-    name: "Индивидуальный",
+    name: "Индивидуально",
     price: "По запросу",
+    period: "",
     features: [
-      "Неограниченно страниц",
-      "Кастомный функционал",
-      "API-интеграции",
+      "Коммерческая съёмка",
+      "Каталоги и лукбуки",
+      "Видеосъёмка",
       "Персональный менеджер",
-      "6 месяцев поддержки",
+      "Любой объём и сроки",
     ],
     highlighted: false,
   },
@@ -60,10 +62,10 @@ export function PricingSection() {
             Прозрачные цены
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold text-balance">
-            Выберите <span className="text-primary">идеальный тариф</span> для вашего проекта
+            Выберите <span className="text-primary">подходящий формат</span> съёмки
           </h2>
           <p className="text-muted-foreground text-lg max-w-2xl mx-auto">
-            От стартапов до крупного бизнеса — у нас есть подходящее решение
+            Аренда студии самостоятельно или съёмка с нашим фотографом — всё в одном месте
           </p>
         </div>
 
@@ -92,7 +94,7 @@ export function PricingSection() {
                       <>
                         <span className="text-lg font-normal text-muted-foreground">от </span>
                         {tier.price}
-                        <span className="text-lg font-normal text-muted-foreground"> ₽</span>
+                        <span className="text-lg font-normal text-muted-foreground"> ₽{tier.period}</span>
                       </>
                     )}
                   </span>
@@ -112,7 +114,7 @@ export function PricingSection() {
                   variant={tier.highlighted ? "default" : "outline"}
                   className={`w-full ${tier.highlighted ? "shadow-lg shadow-primary/20" : ""}`}
                 >
-                  {tier.price === "По запросу" ? "Связаться с нами" : "Выбрать тариф"}
+                  {tier.price === "По запросу" ? "Обсудить проект" : "Забронировать"}
                 </QuoteFormDialog>
               </CardContent>
             </Card>
@@ -121,8 +123,8 @@ export function PricingSection() {
 
         <div className="mt-12 text-center">
           <p className="text-sm text-muted-foreground">
-            Все тарифы включают <span className="text-primary font-semibold">бесплатную настройку хостинга</span> и{" "}
-            <span className="text-primary font-semibold">SSL-сертификат</span>
+            Все тарифы включают <span className="text-primary font-semibold">профессиональный свет</span> и{" "}
+            <span className="text-primary font-semibold">доступ к реквизиту</span>
           </p>
         </div>
       </div>

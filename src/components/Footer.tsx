@@ -1,4 +1,4 @@
-import { Github, Linkedin, Twitter } from "lucide-react"
+import { Instagram, Youtube } from "lucide-react"
 
 export function Footer() {
   return (
@@ -6,9 +6,11 @@ export function Footer() {
       <div className="container mx-auto max-w-6xl">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
-            <h3 className="text-xl font-bold mb-4">CodeCraft</h3>
+            <h3 className="text-xl font-bold mb-4">📷 LightRoom</h3>
             <p className="text-sm text-muted-foreground leading-relaxed">
-              2025 CodeCraft. Все права защищены.
+              Профессиональная фотостудия. Аренда и услуги фотографа.
+              <br />
+              © 2025 LightRoom. Все права защищены.
             </p>
           </div>
 
@@ -17,7 +19,7 @@ export function Footer() {
             <ul className="space-y-2">
               <li>
                 <a href="#about" className="text-sm text-muted-foreground hover:text-primary transition-colors">
-                  О нас
+                  О студии
                 </a>
               </li>
               <li>
@@ -28,6 +30,11 @@ export function Footer() {
               <li>
                 <a href="#portfolio" className="text-sm text-muted-foreground hover:text-primary transition-colors">
                   Портфолио
+                </a>
+              </li>
+              <li>
+                <a href="#pricing" className="text-sm text-muted-foreground hover:text-primary transition-colors">
+                  Тарифы
                 </a>
               </li>
               <li>
@@ -42,31 +49,22 @@ export function Footer() {
             <h4 className="font-semibold mb-4">Мы в соцсетях</h4>
             <div className="flex gap-4">
               <a
-                href="https://linkedin.com"
+                href="https://instagram.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                <Linkedin className="h-5 w-5" />
-                <span className="sr-only">LinkedIn</span>
+                <Instagram className="h-5 w-5" />
+                <span className="sr-only">Instagram</span>
               </a>
               <a
-                href="https://github.com"
+                href="https://youtube.com"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="text-muted-foreground hover:text-primary transition-colors"
               >
-                <Github className="h-5 w-5" />
-                <span className="sr-only">GitHub</span>
-              </a>
-              <a
-                href="https://twitter.com"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="text-muted-foreground hover:text-primary transition-colors"
-              >
-                <Twitter className="h-5 w-5" />
-                <span className="sr-only">Twitter</span>
+                <Youtube className="h-5 w-5" />
+                <span className="sr-only">YouTube</span>
               </a>
             </div>
           </div>

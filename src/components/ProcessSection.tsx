@@ -1,27 +1,27 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card"
-import { Lightbulb, PaletteIcon, Rocket, ArrowRight } from "lucide-react"
+import { CalendarCheck, Camera, ImageIcon, ArrowRight } from "lucide-react"
 import { Fragment } from "react"
 
 const steps = [
   {
-    icon: Lightbulb,
-    title: "Концепция и планирование",
+    icon: CalendarCheck,
+    title: "Бронирование",
     description:
-      "Вместе обсуждаем вашу идею, цели и видение сайта. Разрабатываем четкий план, соответствующий вашим пожеланиям, с правильной структурой и функциональностью.",
+      "Выбираете удобную дату и время, тариф — аренда студии или съёмка с фотографом. Подтверждаем бронь и обсуждаем детали: стиль, образы, задачи.",
     number: "01",
   },
   {
-    icon: PaletteIcon,
-    title: "Разработка и дизайн",
+    icon: Camera,
+    title: "Съёмка",
     description:
-      "Наши разработчики и дизайнеры приступают к созданию сайта. Фокусируемся на стильном дизайне, удобном для пользователей и технически безупречном.",
+      "Приходите в студию — всё уже готово. Профессиональный свет, реквизит, комфортная атмосфера. Снимаем в своё удовольствие без спешки.",
     number: "02",
   },
   {
-    icon: Rocket,
-    title: "Тестирование и запуск",
+    icon: ImageIcon,
+    title: "Готовые фото",
     description:
-      "Тщательно тестируем сайт для обеспечения оптимальной производительности. После вашего одобрения запускаем проект и остаемся на связи для поддержки.",
+      "В течение 3–5 дней получаете обработанные снимки на почту или в мессенджер. Высокое разрешение для печати и оптимизированные для соцсетей.",
     number: "03",
   },
 ]
@@ -34,13 +34,13 @@ export function ProcessSection() {
       <div className="container mx-auto max-w-7xl relative z-10">
         <div className="text-center mb-16">
           <div className="inline-block mb-4 px-4 py-2 rounded-full bg-primary/10 text-primary text-sm font-semibold">
-            Наш процесс
+            Как это работает
           </div>
           <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold mb-6 text-balance">
-            От <span className="text-primary">идеи</span> к <span className="text-primary">результату</span>
+            От <span className="text-primary">брони</span> до <span className="text-primary">готовых фото</span>
           </h2>
           <p className="text-lg text-muted-foreground max-w-3xl mx-auto text-pretty leading-relaxed">
-            В три простых шага превращаем вашу идею в мощное онлайн-присутствие, приносящее результат.
+            Три простых шага — и у вас есть профессиональные фотографии, которые вы будете показывать годами.
           </p>
         </div>
 
